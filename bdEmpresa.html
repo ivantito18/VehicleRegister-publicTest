@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT BD-Test</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/assets/css/all.css">
+</head>
+
+<body>
+    <header id="header">
+        <a id="inicio" href="/bdEmpresa.html">
+            <div id="logo">
+                <span>
+                    <i class="fas fa-sitemap fa-2x"></i>
+                </span>
+                <p>IT Solutions</p>
+            </div>
+        </a>
+        <nav id="menu">
+            <ul>
+                <li>CONTACTO</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="clearFix"></div>
+    <section id="contenedor">
+        <span>
+            <h1>REGISTRO DE VEHÍCULOS</h1>
+        </span>
+        <div id="formulario_contenedor">
+            <form id="formulario_auto" class="formulario">
+                <label for="Marca">Marca</label>
+                <input type="text" name="Marca" id="input_marca" autocomplete="off" placeholder="Escriba la marca"
+                    class="noFocus" />
+                <label for="Modelo">Modelo</label>
+                <input type="text" name="Modelo" id="input_modelo" autocomplete="off" placeholder="Escriba el modelo"
+                    class="noFocus">
+                <label for="Año">Año</label>
+                <input type="text" name="Año" id="input_año" autocomplete="off" placeholder="Escriba el año"
+                    class="noFocus" />
+                <label for="Patente">Dominio</label>
+                <input type="text" name="Dominio" id="input_dominio" autocomplete="off"
+                    placeholder="Escriba el dominio (sin guiones ni espacios)" class="noFocus" />
+                <input type="submit" value="AÑADIR" class="noFocus" />
+            </form>
+        </div>
+        <div class="clearFix"></div>
+        <div id="tabla">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>MARCA</th>
+                        <th>MODELO</th>
+                        <th>AÑO</th>
+                        <th>DOMINIO</th>
+                        <th>FUNCIÓN</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-autos">
+                    <!--Valores insertados desde JS-->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <div id="footer">
+            <p id="yearFooter">2020 &copy; Iván Tito</p>
+            <span>
+                <a href="https://instagram.com/ivantito18" target="_blank"><i
+                        class="fab fa-instagram instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin linkedin"></i></a>
+            </span>
+        </div>
+    </footer>
+
+    <script type="text/javaScript" src="/js/app.js"></script>
+</body>
+
+</html>

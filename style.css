@@ -1,0 +1,404 @@
+/*---------Estilos Generales---------*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    background:  #EBEBEB;
+}
+
+
+/*-----------Animaciones----------*/
+
+@keyframes color-threesome {
+    0%{
+        color: black;
+       background: transparent;
+    }
+    25%{
+        color: rgba(0,212,255,1);
+        background: transparent;
+    }
+    50%{
+        color: #ccc;
+        background: transparent;
+    }
+    75%{
+        color:  rgba(9,9,121,1);
+        background: transparent;
+    }
+    100%{
+        color: black;
+        background: transparent;
+    }
+}
+
+
+
+/*-------------Clases-------------*/
+
+.clearFix{
+    clear: both;
+    float: none;
+}
+
+.formulario{
+    display: block;
+    float: left;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 49%, rgba(7,55,151,1) 59%, rgba(0,212,255,1) 100%);
+    padding: 20px;
+    margin: 0px auto;
+}
+
+.table{
+    width: 100%;
+    height: 200px;
+    border-spacing: 2px;
+    color: white;
+    background: white;
+}
+
+.table-firstline{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 49%, rgba(7,55,151,1) 59%, rgba(0,212,255,1) 100%);
+}
+
+.noFocus{
+    outline: none;
+}
+
+.button-edit{
+    color: rgba(0,212,255,1) !important;
+    background: white !important;
+}
+
+.button-delete{
+    color:red !important;
+    background: white !important;
+}
+
+.alerta{
+    display: block;
+    width: 80%;
+    height: 100%;
+    background: rgb(194, 0, 0);
+    border-radius: 999px;
+    color: white;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+.success{
+    display: block;
+    width: 80%;
+    height: 100%;
+    background: rgb(0, 150, 0);
+    border-radius: 999px;
+    color: white;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+
+/*-----------Contenedor Principal----------*/
+
+#header{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0px 0px 10px #ccc;
+    margin-bottom: 30px;
+    background: white;
+}
+
+#inicio:hover{
+    color: rgba(0,212,255,1);
+    transition: all 500ms;
+    text-decoration: none;
+}
+
+#logo{
+    display: block;
+    float: left;
+    background: transparent;
+    margin-left: 100px;
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#logo span{
+    display: block;
+    float: left;
+    color: white;
+    background: transparent;
+}
+
+#logo span i{
+    display: block;
+    float: left;
+    color:  rgba(0,212,255,1);
+    background: transparent;
+    margin-top: 11px;
+    margin-left: 10px;
+}
+
+#logo p{
+    display: block;
+    float: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(53, 53, 53);
+    margin-top: 18px;
+    margin-left: 10px;
+    background: transparent;
+    animation-name: color-threesome;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    transition: 500ms all;
+}
+
+#logo p:hover{
+    color: rgba(0,212,255,1);
+    
+}
+
+header a{
+    list-style: none;
+    text-decoration: none;
+}
+
+#menu{
+    display: block;
+    float: right;
+    width: 20%;
+    height: 100%;
+    margin-right: 90px;
+    list-style: none;
+    background: transparent;
+}
+
+#menu ul{
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: transparent;
+}
+
+#menu ul li{
+    display: block;
+    float: right;
+    width: 20%;
+    margin: 0px auto;
+    margin-right: 70px;
+    height: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    background: transparent;
+    color: black;
+    animation-name: color-threesome;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+#menu ul li:first-child{
+    margin-left: 5px;
+}
+
+#menu ul li:hover{
+    color: rgba(0,212,255,1);;
+}
+
+#contenedor{
+    display: block;
+    width: 70%;
+    min-height: 300px;
+    max-height: 630px;
+    margin: 0px auto;
+    margin-top: 10px;
+    padding: 20px;
+    background: #fff;
+    color: black;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+#contenedor span h1{
+    text-align: center;
+    width: 100%;
+    color:rgb(53, 53, 53);
+    background: white;
+    margin-top: 15px;
+    letter-spacing: 3px;
+}
+
+#formulario_contenedor{
+    display: block;
+    width: 50%;
+    height: 25%;
+    line-height: 20px;
+    background: #fff;
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#formulario_auto{
+    display: block;
+    width: 90%;
+    height: auto;
+    background: white;
+    padding: 20px;
+    margin: 0px auto;
+}
+
+#formulario_auto label{
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-left: 45px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+    background: transparent;
+    letter-spacing: 1px;
+    
+}
+
+#formulario_auto input[type="text"]{
+    display: block;
+    width: 75%;
+    height: 25px;
+    color: black;
+    background: #EBEBEB;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 3px #ccc inset;
+    border-radius: 20px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    padding-left: 25px;
+}
+
+input::placeholder{
+    color: #353535;
+}
+
+#formulario_auto input[type="submit"]{
+    display: block;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 125px;
+    height: 35px;
+    text-align: center;
+    line-height: 1px;
+    margin: 0px auto;
+    margin-top: 30px;
+    color: black;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 700ms;
+}
+
+#formulario_auto input[type="submit"]:hover{
+    background: rgba(0,212,255,1);
+    color: white;
+    box-shadow: 0px 0px 10px white;
+}
+
+#tabla{
+    display: block;
+    width: 100%;
+    max-height: 200px;
+    margin-top: 15px;
+    border-bottom: 2px solid #ccc;
+    background: white;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(53,53,53); 
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#tabla thead{
+    width: 100%;
+}
+
+#tabla thead tr th{
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: rgb(53, 53, 53)
+}
+
+#lista-autos tr{
+    max-height: 30px;
+}
+
+#lista-autos td{
+    text-align: center;
+    background: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-width: 150px;
+    max-height: 30px;
+}
+
+#lista-autos td p{
+    border-bottom: 1px solid #ccc;
+    background: white;
+    color: rgb(53, 53, 53);
+}
+
+#lista-autos td i{
+    border-bottom: 1px solid #ccc;
+    height: 20px;
+    background: white;
+    color: red;
+    cursor: pointer;
+}
+
+footer{
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 5%;
+    margin-top: 1.8%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+footer p{
+    margin-bottom: 0.5%;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #ccc;
+}
+
+#footer span a{
+    font-size: 14px;
+    color: #ccc;
+}
+
+#footer span a:hover{
+    color: rgba(0,212,255,1);
+}
