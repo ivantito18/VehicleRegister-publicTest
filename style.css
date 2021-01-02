@@ -107,6 +107,26 @@
     margin-top: 30px;
 }
 
+.hx{
+    display: block;
+    color:#353535;
+    background: transparent;
+    text-align: center;
+}
+
+.logo{
+    margin-top: 50px;
+    color: rgba(0,212,255,1);
+}
+
+.px{
+    display: block;
+    color:#353535;
+    background: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 
 /*----------------------------------------Contenedor Principal--------------------------------------*/
 
@@ -220,12 +240,36 @@ header a{
     transition: all 500ms;
 }
 
+#menu ul li a{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    margin-right: 70px;
+    height: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    background: transparent;
+    color: black;
+    animation-name: color-threesome;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
 #menu ul li:first-child{
     margin-left: 5px;
 }
 
+#menu ul li a:hover{
+    color: rgba(0,212,255,1);
+}
+
 #menu ul li:hover{
-    color: rgba(0,212,255,1);;
+    color: rgba(0,212,255,1);
 }
 
 #contenedor{
@@ -351,10 +395,13 @@ input::placeholder{
     width: 100%;
 }
 
-#tabla thead tr th{
+#tabla table thead tr th{
     font-size: 15px;
     letter-spacing: 1px;
-    background: rgb(53, 53, 53)
+    background: rgb(53, 53, 53);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 #lista-autos tr{
@@ -409,6 +456,14 @@ footer p{
 #footer span a:hover{
     color: rgba(0,212,255,1);
 }
+
+/*------------------------------------Contenedor principal /contacto.html--------------------------*/
+
+#contacto_h2{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
 
 /*--------------------------------------------Responsive Design-------------------------------------*/
 
