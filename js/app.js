@@ -46,13 +46,7 @@ class UI {
     //imprime Alerta de exito o error en pantalla
     imprimirAlerta(mensaje, tipo){
         const divAlerta = document.createElement("DIV");
-        divAlerta.style.display = "block";
-        divAlerta.style.position = "absolute";
-        divAlerta.style.width = "40%";
-        divAlerta.style.background = "transparent";
-        divAlerta.style.marginLeft = "15%";
-        divAlerta.style.marginTop = "-2%";
-        
+        divAlerta.classList.add("alerta2");
 
         const p = document.createElement("P");
         p.textContent = mensaje;
@@ -70,7 +64,7 @@ class UI {
 
         setTimeout(function(){
             divAlerta.remove();
-        }, 2000);
+        }, 4000);
     }
 };
 
